@@ -39,3 +39,12 @@ bin/exrmtest ping
 # → port4000に接続できることを確認
 ```
 
+# stg環境の作成
+```bash
+export MIX_ENV=stg
+mix deps.get --only stg
+mix compile
+mix phoenix.digest
+mix release
+```
+
