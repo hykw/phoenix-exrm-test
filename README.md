@@ -17,6 +17,7 @@ mix phoenix.server
 # prod環境の作成
 ```bash
 vi config/prod.exs
+# ※server: true を忘れると起動しないので注意
 
 export MIX_ENV=prod
 mix deps.get --only prod
